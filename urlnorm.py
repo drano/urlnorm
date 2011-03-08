@@ -242,6 +242,6 @@ def _utf8(value):
 
 def _unicode(value):
     if isinstance(value, str):
-        return value.decode("utf-8")
+        return value.decode("utf-8", "replace")
     assert isinstance(value, unicode)
     return value
